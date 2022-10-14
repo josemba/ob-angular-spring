@@ -6,8 +6,9 @@ const AUTH_API = 'https://ob-spring-security-jwt-josemba.herokuapp.com/api/auth/
 //const AUTH_API = 'http://localhost:8080/api/auth/';
 
 const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*' })
 //  headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With' })
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+//  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
 @Injectable({
